@@ -116,10 +116,10 @@ if(totalShoppingCart > 50){
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
-
+console.log("ESERCIZIO 7");
 const variabile0 = 1;
-const variabile1 = 2;
-const variabile2 = 20;
+const variabile1 = 1;
+const variabile2 = 1;
 
 // ordinare dal più alto al più basso
 const contenitoreVariabili = [];
@@ -189,18 +189,16 @@ if(valDivisibile % 2 === 0){
 
 
 /* ESERCIZIO 10
-  Modifica la logica del seguente algoritmo in modo che mostri in console il messaggio corretto in ogni circostanza.
+  Modifica la logica del seguente algoritmo in modo che mostri in console il messaggio corretto in ogni circostanza. */
   let val = 7
-  if (val < 10) {
+  
+  if (val <= 10) {
       console.log("Meno di 10");
-    } else if (val < 5) {
+    } else if (val >= 5) {
       console.log("Meno di 5");
     } else {
       console.log("Uguale a 10 o maggiore");
     }
-*/
-
-/* SCRIVI QUI LA TUA RISPOSTA */
 
 /* ESERCIZIO 11
   Fornito il seguente oggetto, scrivi del codice per aggiungere una proprietà "city", il cui valore sarà "Toronto".
