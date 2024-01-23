@@ -7,7 +7,9 @@ const num2 = 10;
 
 if (num1 > num2) {
   console.log(`Il numero 1: ${num1} è il numero intero più grande del numero2: ${num2} `);
-} else {
+} else if (num1 === num2){
+  console.log(`Il numero 2: ${num2} è uguale al numero 1: ${num1} `);
+} else{
   console.log(`Il numero 2: ${num2} è il numero intero più grande del numero 1: ${num1} `);
 }
 
@@ -18,10 +20,14 @@ if (num1 > num2) {
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
-const numNuovo = 7;
+const numNuovo = 6;
+
+console.log("Esercizio 2");
 
 if (numNuovo !== 5) {
   console.log(`Il numero: ${numNuovo} è diverso da 5`);
+}else{
+  console.log("Il numero è uguale a 5");
 }
 /* ESERCIZIO 3
   Scrivi un algoritmo che mostri "divisibile per 5" in console se un numero fornito è perfettamente divisibile per 5 (suggerimento: usa l'operatore modulo)
@@ -199,20 +205,39 @@ console.log("Dopo le modifiche", me);
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
+delete me.lastName;
+console.log(me);
 /* ESERCIZIO 13
   Lavorando sempre sull'oggetto precedentemente fornito, scrivi del codice per rimuovere l'ultimo elemento della proprietà "skills".
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
-
+delete me.skills [2];
+console.log("Eliminare CSS ", me);
 /* ESERCIZIO 14
   Scrivi del codice per creare un array inizialmente vuoto. Riempilo successivamente con i numeri da 1 a 10.
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+const contenitore14 = [];
 
+contenitore14.splice(0, 0, 1);
+contenitore14.splice(1, 0, 2);
+contenitore14.splice(2, 0, 3);
+contenitore14.splice(3, 0, 4);
+contenitore14.splice(4, 0, 5);
+contenitore14.splice(5, 0, 6);
+contenitore14.splice(6, 0, 7);
+contenitore14.splice(7, 0, 8);
+contenitore14.splice(8, 0, 9);
+contenitore14.splice(9, 0, 10);
+
+console.log(contenitore14);
 /* ESERCIZIO 15
   Scrivi del codice per sostituire l'ultimo elemento dell'array, ovvero il valore 10, con il valore 100.
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+contenitore14.splice(9, 1, 100); 
+
+console.log("sostituire l'ultimo numero con il 100 ",contenitore14);
