@@ -71,11 +71,19 @@ if (numIntero1 === 8) {
 
 //  Stai salvando il saldo totale del carrello dell'utente in una variabile "totalShoppingCart".
 
-let totalShoppingCart = null;
+let totalShoppingCart = 30;
+console.log("ESERCIZIO 5");
 
 //  se il totale del carrello supera 50
 //      diritto alla spedizione gratuita 
 //  (altrimenti la spedizione ha un costo fisso pari a 10)
+
+if(totalShoppingCart > 50){
+  console.log("Hai diritto alla spedizione gratuita, quindi il tuo carrello rimarra invariato di: ", totalShoppingCart);
+}else{
+  totalShoppingCart += 10;
+  console.log("Non hai diritto allo sconto, la spedizione ha un costo fisso di 10, quindi il totale sarà: ", totalShoppingCart);
+}
 
 //  totale utente checkout per spedizione alg,
 
@@ -87,6 +95,19 @@ let totalShoppingCart = null;
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+console.log("ESERCIZIO 6");
+//tot * 20
+//tot / 100
+totalShoppingCart *= 20;
+const totScontato = totalShoppingCart / 100;
+// 20% sconto su ogni prodotto
+// prima se le spedizioni sono gratuite
+if(totalShoppingCart > 50){
+  console.log("Hai diritto alla spedizione gratuita, quindi il tuo carrello rimarra invariato di: ", totScontato);
+}else{
+  totalShoppingCart += 10;
+  console.log("Non hai diritto allo sconto, la spedizione ha un costo fisso di 10, quindi il totale sarà: ", totScontato);
+}
 
 /* ESERCIZIO 7
   Crea tre variabili, e assegna un valore numerico a ciascuna di esse.
